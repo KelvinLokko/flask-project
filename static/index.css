@@ -1,0 +1,93 @@
+/* Basic CSS Styling */
+
+/* Apply a universal style to the entire document */
+body {
+    font-family: Arial, sans-serif; /* Set default font */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Text color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #0056b3; /* Blue color for headers */
+    margin-bottom: 15px; /* Space below each header */
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.6; /* Increased line spacing */
+    margin: 15px 0; /* Margin above and below paragraphs */
+}
+
+/* Style for links */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Basic button style */
+button {
+    background-color: #007bff; /* Blue background */
+    border: none; /* No border */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline block layout */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for a container */
+.container {
+    width: 80%; /* Container width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Style for a navigation bar */
+.navbar {
+    background-color: #333; /* Dark background */
+    overflow: hidden; /* Clear floats */
+}
+
+.navbar a {
+    float: left; /* Align links to the left */
+    display: block; /* Display as block elements */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding inside links */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Black text on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside footer */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    position: fixed; /* Fix position at the bottom */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+}
