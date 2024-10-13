@@ -67,19 +67,3 @@ Acknowledgments
 Flask Documentation
 Flask-SQLAlchemy Documentation
 Flask-Login Documentation
-markdown
-Copy code
-
-### Final Steps
-
-1. **Replace placeholders**: Make sure to replace `your-username` and `your-repo-name` in the clone command with your actual GitHub username and repository name.
-
-2. **Create the README file**:
-   - In your project directory, create a file named `README.md`.
-   - Paste the above content into the `README.md` file.
-
-3. **Commit and push**:
-   ```bash
-   git add README.md
-   git commit -m "Add README"
-   git push origin main  # or your branch name
