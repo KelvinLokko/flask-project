@@ -6,6 +6,21 @@
 </head>
 <body>
     <h2>Login</h2>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flash-messages">  
+        {% for message in messages %}
+            {% if message.startswith("Signup successful") %}
+                <li class="success-message">{{ message }}</li>  <!-- Success message -->
+            {% else %}
+                <li class="error-message">{{ message }}</li>  <!-- Error message -->
+            {% endif %}
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+
     <form method="POST">
         <label>Username:</label>
         <input type="text" name="username" required>
@@ -16,14 +31,5 @@
         <input type="submit" value="Login">
     </form>
     <p>Don't have an account? <a href="{{ url_for('signup') }}">Sign up here</a></p>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-        <ul class="flash-messages">  <!-- Add class to the unordered list -->
-        {% for message in messages %}
-            <li class="error-message">{{ message }}</li>  <!-- Add class to list items -->
-        {% endfor %}
-        </ul>
-    {% endif %}
-    {% endwith %}
 </body>
 </html>

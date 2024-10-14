@@ -64,10 +64,17 @@ a:hover {
 .flash-messages {
     padding: 0; /* Remove default padding */
     list-style-type: none; /* Remove bullet points */
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Add margin for spacing */
 }
 /* Error message styling */
 .error-message {
     color: red; /* Error message color */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 5px; /* Space above the message */
+}
+.success-message {
+    color: green; /* Change to your preferred success color */
     font-size: 0.9em; /* Slightly smaller font size */
     margin-top: 5px; /* Space above the message */
 }
