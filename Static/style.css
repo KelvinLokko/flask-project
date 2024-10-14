@@ -59,7 +59,12 @@ a {
 a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+/* Existing styles... */
 
+.flash-messages {
+    padding: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+}
 /* Error message styling */
 .error-message {
     color: red; /* Error message color */
