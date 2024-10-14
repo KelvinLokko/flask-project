@@ -59,3 +59,10 @@ a {
 a:hover {
     text-decoration: underline; /* Underline on hover */
 }
+
+/* Error message styling */
+.error-message {
+    color: red; /* Error message color */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 5px; /* Space above the message */
+}

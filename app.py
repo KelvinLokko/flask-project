@@ -56,12 +56,15 @@ def signup():
             new_user = User(username=username, password=password)
             db.session.add(new_user)
             db.session.commit()
-            login_user(new_user)
-            return redirect(url_for('home'))
+            
+            # Redirect to login after successful signup
+            flash('Signup successful! Please log in.')
+            return redirect(url_for('login'))
         else:
             flash('Username already exists, choose a different one.')
 
     return render_template('signup.html')
+
 
 # Logout route
 @app.route('/logout')
